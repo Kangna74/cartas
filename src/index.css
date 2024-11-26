@@ -1,0 +1,65 @@
+:root {
+  --color: #e1306c;
+}
+
+.card-container {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 300px;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.5s;
+
+  &.twitter{
+    background-color: rgb(102 199 199);
+  }
+
+  &.instagram{
+    background-color: rgb(163 120 204);
+  }
+
+  &.youtube{
+    background-color: rgb(163 53 53);
+  }
+
+  &:hover {
+    background-color: var(--color);
+    color: white;
+  }
+
+  & .logo {
+    width: 65px;
+  }
+
+  & h1 {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  & p{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  & .readmore {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 50%;
+    margin: auto;
+    padding: 14px 65px;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: white;
+      color: var(--color);
+    }
+  }
+}
